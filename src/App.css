@@ -1,0 +1,146 @@
+#main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(125deg, #ffa597 0%, #f05776 55%, #ffa2b3 100%);
+}
+
+#to-do-list {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 35px;
+    overflow: hidden;
+    box-shadow: 0vmax 0vmax 50px #00000075;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vmax;
+    width: 100%;
+    height: fit-content;
+}
+
+#header > h1 {
+    font-size: 2.15vmax;
+    font-weight: 900;
+}
+
+#header > p {
+    font-size: 0.75vmax;
+    font-weight: 300;
+}
+
+#input {
+    display: flex;
+    align-items: center;
+    gap: 1vmax;
+    padding: 2vmax;
+    border-bottom: 1px solid #00000093;
+}
+
+#input > input {
+    padding: 1vmax;
+    font-size: 1vmax;
+    border: 2px solid #000;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+#add-button {
+    border: 2px solid #000;
+    outline: none;
+    background-color: #61f84a;
+    color: #000;
+    font-weight: 800;
+    font-size: 1vmax;
+    padding: 0.6vmax 1vmax;
+    border-radius: 100px;
+    transition: 0.2s;
+}
+
+#add-button:hover {
+    background-color: #2e8b33;
+    color: #fff;
+    cursor: grab;
+}
+
+#add-button:active {
+    cursor: grabbing;
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 2vmax;
+    gap: 1vmax;
+
+}
+
+.task {
+    border: 2px solid black;
+    background-image: linear-gradient(125deg, #ffe1dc 0%, #ffb9c7 55%, #ffd0d9 100%);
+    color: #000;
+    height: 4vmax;
+    min-width: 25vmax;
+    display: flex;
+    border-radius: 500px;
+}
+
+.task-left {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1vmax;
+}
+
+.task-left > p {
+    font-size: 1.05vmax;
+    font-weight: 700;
+}
+
+.task-right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5vmax;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+    font-size: 0.8vmax;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.delete-button {
+    background-color: #ff0000;
+    border-radius: 5px;
+    font-size: 1.4vmax;
+    padding: 0.3vmax;
+}
+
+.up-down-button {
+    background-color: #184eff;
+    border-radius: 50%;
+}
